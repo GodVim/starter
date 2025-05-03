@@ -1,3 +1,8 @@
 # My config
 
-wow, i finnally have a neovim config. hurrah
+A modular neovim config. 
+
+## Credits
+- NvChad
+- LazyVim
+inspiration.
