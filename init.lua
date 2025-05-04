@@ -18,7 +18,7 @@ local lazy_config = require("config.lazy")
 require("lazy").setup({
 	spec = {
 		-- GodVim Plugins -- remove whichever modules you like
-		{ "GodVim/GODVIM", dev=true, import = "godvim.plugins" },
+		{ "GodVim/GODVIM", import = "godvim.plugins" },
 --    { import = "godvim.plugins.extras.cp" },
 		-- Override GodVim's plugins
 		{ import = "plugins" },
