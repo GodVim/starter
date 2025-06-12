@@ -16,7 +16,6 @@ require("lazy").setup({
   spec = {
     -- GodVim Plugins -- remove whichever modules you like
     { "GodVim/GODVIM",                 import = "godvim.plugins" },
-    { import = "godvim.plugins.cp" },
     { import = "godvim.plugins.ui" },
 
     { import = "godvim.plugins.lang" },
