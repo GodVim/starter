@@ -1,12 +1,10 @@
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
+
 if vim.env.PROF then
-  -- example for lazy.nvim
-  -- change this to the correct path for your plugin manager
   local snacks = vim.fn.stdpath("data") .. "/lazy/snacks.nvim"
   vim.opt.rtp:append(snacks)
   require("snacks.profiler").startup({
     startup = {
-      -- event = "VimEnter", -- stop profiler on this event. Defaults to `VimEnter`
-      -- event = "UIEnter",
       event = "VeryLazy",
     },
   })
@@ -28,8 +26,11 @@ local lazy_config = require("config.lazy")
 
 require("lazy").setup({
   spec = {
-    -- GodVim Plugins -- remove whichever modules you like
-    { "GodVim/GODVIM", dev = true,                import = "godvim.plugins" },
+    { "GodVim/GODVIM", import = "godvim.plugins" },
+
+    -- Extras exist!
+    { import = "godvim.plugins.extras.misc.wakatime"},
+    
     -- Override GodVim's plugins
     { import = "plugins" },
   },
