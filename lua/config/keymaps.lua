@@ -1,2 +1,2 @@
-import "godvim.keymaps"
+require "godvim.keymaps"
 -- uh upt your keymaps here
