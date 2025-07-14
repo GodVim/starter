@@ -1,15 +1,5 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 
-if vim.env.PROF then
-  local snacks = vim.fn.stdpath("data") .. "/lazy/snacks.nvim"
-  vim.opt.rtp:append(snacks)
-  require("snacks.profiler").startup({
-    startup = {
-      event = "VeryLazy",
-    },
-  })
-end
-
 vim.g.mapleader = " "
 
 -- bootstrap lazy and all plugins
